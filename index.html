@@ -3,118 +3,14 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Cool Features Showcase</title>
-    <style>
-        /* Add some basic styling */
-        body {
-            font-family: Arial, sans-serif;
-            margin: 0;
-            padding: 0;
-            background: #f4f4f4;
-        }
-
-        header {
-            background: #333;
-            color: #fff;
-            padding: 1rem;
-            text-align: center;
-        }
-
-        .container {
-            max-width: 1100px;
-            margin: auto;
-            overflow: hidden;
-            padding: 0 2rem;
-        }
-
-        h2 {
-            text-align: center;
-            margin: 2rem 0;
-        }
-
-        /* Cool features specific styling */
-        #canvas-section, #video-section, #audio-section, #animation-section {
-            margin-bottom: 2rem;
-            padding: 1rem;
-            background: #fff;
-            border-radius: 5px;
-        }
-
-        canvas {
-            display: block;
-            margin: auto;
-            background: #ddd;
-            border: 1px solid #ccc;
-        }
-
-        video, audio {
-            display: block;
-            width: 100%;
-            margin: auto;
-        }
-
-        @keyframes rotate-animation {
-            from { transform: rotate(0deg); }
-            to { transform: rotate(360deg); }
-        }
-
-        .animated-box {
-            margin: 2rem auto;
-            width: 100px;
-            height: 100px;
-            background: teal;
-            animation: rotate-animation 4s linear infinite;
-        }
-    </style>
+    <title>seattle</title>
+    <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    <header>
-        <h1>HTML Cool Features Showcase</h1>
-    </header>
-
-    <section class="container" id="canvas-section">
-        <h2>HTML5 Canvas</h2>
-        <canvas id="coolCanvas" width="400" height="200">Your browser does not support the HTML canvas tag.</canvas>
-        <script>
-            var canvas = document.getElementById('coolCanvas');
-            var ctx = canvas.getContext('2d');
-
-            // Draw a gradient
-            var grd = ctx.createLinearGradient(0, 0, 200, 0);
-            grd.addColorStop(0, 'red');
-            grd.addColorStop(1, 'white');
-
-            // Fill with gradient
-            ctx.fillStyle = grd;
-            ctx.fillRect(10, 10, 380, 180);
-        </script>
-    </section>
-
-    <section class="container" id="video-section">
-        <h2>HTML5 Video Player</h2>
-        <video controls>
-            <source src="https://www.demolandia.ovh/downloads/dolby-vision/dolby-vision-amaze-(dolby-vision)-(www.demolandia.net).mp4" type="video/mp4">
-            Your browser does not support the video tag.
-        </video>
-    </section>
-
-    <section class="container" id="audio-section">
-        <h2>HTML5 Audio Player</h2>
-        <audio controls>
-            <source src="https://cdn.sweethiphop.com/music/uploads/2023/12/Travis_Scott_-_90210-Sweethiphop.com.mp3" type="audio/mp3">
-            Your browser does not support the audio tag.
-        </audio>
-    </section>
-
-    <section class="container" id="animation-section">
-        <h2>CSS3 Animations</h2>
-        <div class="animated-box"></div>
-    </section>
-
-    <!-- More cool features could include SVG graphics, WebStorage API, Geolocation API, etc. -->
-
-    <footer class="container">
-        <p>Cool Features Showcase ©2023</p>
-    </footer>
+    <canvas id="screensaverCanvas"></canvas>
+    <div class="overlay">
+        He is to be convoyed neither by gods nor men, but after a perilous voyage of twenty days upon a raft he is to reach fertile Scheria, the land of the Phaeacians, who are near of kin to the gods, and will honour him as though he were one of ourselves.
+    </div>    
+    <script src="script.js"></script>
 </body>
 </html>
